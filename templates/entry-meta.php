@@ -1,4 +1,4 @@
-<?php if (is_page()): ?>
+<?php if (!is_page()): ?>
 
   <time class="published" datetime="<?php echo get_the_time('c'); ?>"><?php echo get_the_date(); ?></time>
   <p class="byline author vcard"><?php echo __('By', 'roots'); ?>
