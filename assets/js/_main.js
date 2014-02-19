@@ -22,7 +22,7 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      // JavaScript to be fired on all pages
+      $('.social-media a').tooltip({placement: 'bottom'});
     }
   },
   // Home page

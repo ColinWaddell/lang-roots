@@ -8,8 +8,36 @@
    Base
    ========================================================================== */
 
-body { }
+body { 
+  background: url('../img/dots.png');
+}
 
+body.home{
+
+  header.navbar-default{
+  }
+
+}
+
+header.navbar-default{
+  margin-bottom: 0;
+}
+
+header{
+
+  .navbar-brand{
+    font-size: 52px;
+    border-bottom: 4px solid #4D4D4D;
+    color: #4D4D4D;
+    font-weight: 900;
+    padding: 36px 0px;
+  }
+}
+
+.page-header{
+  margin: 0 0 20px 0;
+  padding-bottom: 13px;
+}
 
 
 /* ==========================================================================
@@ -26,13 +54,26 @@ body { }
 
 .content { }
 
+h1.entry-title{
+  margin-top: 0;
+}
 
 
 /* ==========================================================================
    Primary Content
    ========================================================================== */
 
-.main { }
+.main { 
+
+  padding: 20px 0;
+
+  p{
+    text-align: justify;
+    line-height: 30px;
+    font-weight: 300;
+  }
+
+}
 
 /* Gallery Shortcode */
 .gallery-row { padding: 15px 0; }
@@ -43,7 +84,33 @@ body { }
    Sidebar
    ========================================================================== */
 
-.sidebar { }
+.sidebar { 
+  aside.social-media{
+    text-align: right;
+
+    a{
+      display: inline-block;
+      width: 70px;
+      height: 70px;
+    }
+
+    a.twitter{
+      background: url('../img/twitter.svg');
+      background-size: cover;
+    }
+
+    a.linkedin{
+      background: url('../img/linkedin.svg');
+      background-size: cover;
+    }
+
+    a.slideshare{
+      background: url('../img/slideshare.svg');
+      background-size: cover;
+    }
+    
+  }
+}
 
 
 
@@ -63,7 +130,13 @@ body { }
    Footer
    ========================================================================== */
 
-.content-info { }
+.content-info { 
+  margin-top: 50px;
+
+  div > div{
+    padding-left: 0;
+  }
+}
 
 
 
