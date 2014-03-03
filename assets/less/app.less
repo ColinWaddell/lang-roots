@@ -49,6 +49,22 @@ header{
 
 
 /* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar-nav{
+
+  li{
+
+    a{
+      padding: 30px 0px 0px 30px;
+      font-size: 32px;
+    }
+  }
+}
+
+
+/* ==========================================================================
    Header
    ========================================================================== */
 
@@ -66,13 +82,17 @@ h1.entry-title{
   margin-top: 0;
 }
 
-img.head-shot{
-  width: 200px;
-  height: 300px;
-  background-image: url(../img/adam-lang.jpg);
-  margin: -20px 0 15px 10px;
-  .box-shadow (0px 5px 10px rgba(0,0,0,0.2));
+a.head-shot{
+  width: 80%;
+  height: 395px;
+  background-image: url(../img/adam-lang.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  //.box-shadow (0px 5px 10px rgba(0,0,0,0.2));
+  margin-left: 10%;
+  display: inline-block;
 }
+
 
 
 /* ==========================================================================
@@ -101,29 +121,36 @@ img.head-shot{
 
 .sidebar { 
   aside.social-media{
-    text-align: right;
+    text-align: center;
 
     a{
       display: inline-block;
-      width: 70px;
+      width: 100%;
       height: 70px;
     }
 
     a.twitter{
       background: url('../img/twitter.svg');
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
     a.linkedin{
       background: url('../img/linkedin.svg');
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
 
     a.slideshare{
       background: url('../img/slideshare.svg');
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
     
+  }
+
+  .widget{
+    text-align: right;
   }
 }
 
@@ -171,13 +198,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (max-width: @screen-sm-min) { 
-
-  img.head-shot{
-    margin-left: 100%;
-    margin-top: 10px;
-  }
-}
+@media (max-width: @screen-sm-min) { }
 
 @media (min-width: @screen-sm-min) { }
 
